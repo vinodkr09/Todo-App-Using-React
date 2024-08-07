@@ -6,22 +6,30 @@ import TodoForm from './components/TodoForm'
 import TodoItem from './components/TodoItem'
 
 function App() {
+
+  // usestate Hooks
   const [todos, setTodos] = useState([])
 
+  // Add todo
   const addTodo = (todo) => {
     setTodos((prev) => [{id: Date.now(), ...todo}, ...prev])
 
   }
 
+
+// update todo
   const updateTodo = (id, todo) => {
     setTodos((prev) => prev.map((prevTodo) => (prevTodo.id===id ? todo : prevTodo)))
   }
 
+
+  // delete todo
   const deleteTodo = (id) => {
       setTodos((prev) => prev.filter((todo) => todo.id !== id ))
 
   }
 
+  // completed or Incompleted
   const toggleComplete = (id) => {
     setTodos((prev) => 
     prev.map((prevTodo) =>

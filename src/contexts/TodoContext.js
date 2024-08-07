@@ -8,10 +8,10 @@ export const TodoContext = createContext({
             completed: false,
         }
     ],
-    addTodo: (todo) => {},    // functionality ka defination yahan nahi likhana hai, app.jsx me likhna hai
-    updateTodo: (id, todo) => {},  // functionality ka defination yahan nahi likhana hai, app.jsx me likhna hai
-    deleteTodo: (id) => {},    // functionality ka defination yahan nahi likhana hai, app.jsx me likhna hai
-    toggleComplete: (id) => {}  // functionality ka defination yahan nahi likhana hai, app.jsx me likhna hai
+    addTodo: (todo) => {},    // functinality defination is not defined here, it defined in app.jsx file
+    updateTodo: (id, todo) => {},  // functinality defination is not defined here, it defined in app.jsx file
+    deleteTodo: (id) => {},    //  functinality defination is not defined here, it defined in app.jsx file
+    toggleComplete: (id) => {}  // functinality defination is not defined here, it defined in app.jsx file
 })
 
 
